@@ -9,12 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+   
   <!-- fontawesome -->
   <script src="https://use.fontawesome.com/4d0e5a98aa.js"></script>
   <!-- Custom Fonts -->
@@ -123,27 +118,27 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center portfolio-item">
           <div class="thumbnail">
-            <a href="#"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/roundicons.png"></a>
+            <a class="portfolio-link" data-toggle="modal" data-target="#myModal"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/roundicons.png"></a>
             <div class="caption">
               <h4>Round Icons</h4>
               <p>Graphic Design</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center portfolio-item">
           <div class="thumbnail">
-            <a href="#"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/startup-framework.png"></a>
+            <a href="#" class="portfolio-link"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/startup-framework.png"></a>
             <div class="caption">
               <h4>Startup Framework</h4>
               <p>Website Design</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center portfolio-item">
           <div class="thumbnail">
-            <a href="#"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/treehouse.png"></a>
+            <a href="#" class="portfolio-link"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/treehouse.png"></a>
             <div class="caption">
               <h4>Tree House</h4>
               <p>Website Design</p>
@@ -152,27 +147,27 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center portfolio-item">
           <div class="thumbnail">
-            <a href="#"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/golden.png"></a>
+            <a href="#" class="portfolio-link"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/golden.png"></a>
             <div class="caption">
               <h4>Golden</h4>
               <p>Website Design</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center portfolio-item">
           <div class="thumbnail">
-            <img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/escape.png">
+            <a href="#" class="portfolio-link"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/escape.png"></a>
             <div class="caption">
               <h4>Escape</h4>
               <p>Website Design</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center portfolio-item">
           <div class="thumbnail">
-            <img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/dreams.png">
+            <a href="#" class="portfolio-link"><img alt="" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/dreams.png"></a>
             <div class="caption">
               <h4>Dreams</h4>
               <p>Website Design</p>
@@ -433,6 +428,7 @@
       </div>
     </div>
   </div>
+
   </footer>
 
 
@@ -465,11 +461,49 @@
 
 
 
+<!-- MODALS -->
+<!-- 1 -->
+<div class="portfolio-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
 
+      <div class="modal-body">
+        <h2>Project Name</h2>
+        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+        <img class="img-responsive" src="http://blackrockdigital.github.io/startbootstrap-agency/img/portfolio/roundicons-free.png">
+        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+          nostrum, reiciendis facere nemo!</p>
+        <p>Want these icons in this portfolio item sample?You can download 60 of them for free, courtesy of RoundIcons.com, or you can purchase the 1500 icon set here.</p>
+        <ul class="list-inline">
+          <li>Date: July 2014</li>
+          <li>Client: Round Icons</li>
+          <li>Category: Graphic Design</li>
+        </ul>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">
+               <i class="fa fa-times"></i>
+               Close Project</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- 2 -->
+
+
+<!-- 3 -->
+
+<!-- 4 -->
+
+<!-- 5 -->
+<!-- 6 -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+ <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
